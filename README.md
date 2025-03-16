@@ -6,10 +6,10 @@
 4. [Build and Install from Source](#build-and-install-from-source)
 5. [Bash Autocomplete](#bash-autocomplete)
 
-Spring is a C++ implementation of the [Antelope](https://github.com/AntelopeIO) protocol with support for Savanna consensus. It contains blockchain node software and supporting tools for developers and node operators.
+Twig Spring is a C++ implementation of the [Antelope](https://github.com/AntelopeIO) protocol with support for Savanna consensus. It contains blockchain node software and supporting tools for developers and node operators.
 
 ## Branches
-The `main` branch is the development branch; do not use it for production. Refer to the [release page](https://github.com/AntelopeIO/spring/releases) for current information on releases, pre-releases, and obsolete releases, as well as the corresponding tags for those releases.
+The `main` branch is the development branch; do not use it for production. Refer to the [release page](https://github.com/two-sticks/twig-blockchain/releases) for current information on releases, pre-releases, and obsolete releases, as well as the corresponding tags for those releases.
 
 ## Supported Operating Systems
 We currently support the following operating systems.
@@ -25,7 +25,7 @@ cat /etc/upstream-release/lsb-release
 Your best bet is to follow the instructions for your Ubuntu base, but we make no guarantees.
 
 ## Binary Installation
-This is the fastest way to get started. From the [latest release](https://github.com/AntelopeIO/spring/releases/latest) page, download a binary for one of our [supported operating systems](#supported-operating-systems), or visit the [release tags](https://github.com/AntelopeIO/spring/releases) page to download a binary for a specific version of Spring.
+This is the fastest way to get started. From the [latest release](https://github.com/two-sticks/twig-blockchain/releases/latest) page, download a binary for one of our [supported operating systems](#supported-operating-systems), or visit the [release tags](https://github.com/two-sticks/twig-blockchain/releases) page to download a binary for a specific version of Spring.
 
 Once you have a `*.deb` file downloaded for your version of Ubuntu, you can install it as follows:
 ```bash
@@ -68,11 +68,11 @@ cd ~/Downloads
 ```
 Clone Spring using either HTTPS...
 ```bash
-git clone --recursive https://github.com/AntelopeIO/spring.git
+git clone --recursive https://github.com/two-sticks/twig-blockchain.git
 ```
 ...or SSH:
 ```bash
-git clone --recursive git@github.com:AntelopeIO/spring.git
+git clone --recursive git@github.com:two-sticks/twig-blockchain.git
 ```
 
 > ℹ️ **HTTPS vs. SSH Clone** ℹ️  
@@ -84,7 +84,7 @@ cd spring
 ```
 
 ### Step 2 - Checkout Release Tag or Branch
-Choose which [release](https://github.com/AntelopeIO/spring/releases) or [branch](#branches) you would like to build, then check it out. If you are not sure, use the [latest release](https://github.com/AntelopeIO/spring/releases/latest). For example, if you want to build release 1.0.1 then you would check it out using its tag, `v1.0.1`. In the example below, replace `v0.0.0` with your selected release tag accordingly:
+Choose which [release](https://github.com/two-sticks/twig-blockchain/releases) or [branch](#branches) you would like to build, then check it out. If you are not sure, use the [latest release](https://github.com/two-sticks/twig-blockchain/releases). For example, if you want to build release 1.0.1 then you would check it out using its tag, `v1.0.1`. In the example below, replace `v0.0.0` with your selected release tag accordingly:
 ```bash
 git fetch --all --tags
 git checkout v0.0.0
@@ -208,7 +208,7 @@ Once you have [built](#step-3---build-the-source-code) Spring and [tested](#step
 We recommend installing the binary package you just built. Navigate to your Spring build directory in a terminal and run this command:
 ```bash
 sudo apt-get update
-sudo apt-get install -y ./spring_*.deb
+sudo apt-get install -y ./twig-spring_*.deb
 ```
 
 It is also possible to install using `make` instead:
